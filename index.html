@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fyle</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://media.licdn.com/dms/image/C510BAQFT6uXPLsQA9w/company-logo_100_100/0/1631359033721?e=1728518400&v=beta&t=SZJUtQRrbogg6SJHGE7guipsoEixbRLRe_foXJ_49Qg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Contact us button -->
+    <div class="ContactContainer opsClass">
+      <div class="contactUpperContainer">
+        <h4 class="text-danger">Award winning</h4>
+        <h2 class="text-dark font-weight-bold fs-1">
+          Digital Marketing Agency
+        </h2>
+        <p>
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+          nec risus finibus feugiat et fermentum
+        </p>
+        <button class="btn btn-danger" id="ContactUsBtn">CONTACT US</button>
+      </div>
+      <div class="imgheroContainer">
+        <img src="./images/hero.png" alt="girlImage" class="w-100" />
+      </div>
+    </div>
+
+    <!-- popup section -->
+
+    <div id="PopupFormFullContainer">
+      <form
+        action="https://getform.io/f/akkgkpwa"
+        method="POST"
+        id="contactForm"
+      >
+        <h3 class="d-flex justify-content-between pb-3">
+          Talk to us <i class="fa-solid fa-xmark" id="closeFormBtn"></i>
+        </h3>
+
+        <div class="formInnerContainer">
+          <div class="form-group">
+            <input
+              type="email"
+              id="Email"
+              name="workEmail"
+              class="w-100 emailClass"
+              required
+            />
+            <label for="workEmail" id="forEmail">Work email*</label>
+            <hr />
+          </div>
+
+          <div class="flex mar-2 gap-1">
+            <div class="form-group">
+              <input type="text" id="firstName" name="firstName" required />
+              <label for="firstName" id="forFirstName">First name*</label>
+              <hr />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                class="w-75 bg-transparent"
+              />
+              <label for="lastName" id="forLastName">Last name*</label>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-container">
+          <input
+            class="col-1"
+            type="checkbox"
+            id="CheckboxBtn"
+            name="termsCheckbox"
+            required
+          />
+          <label for="termsCheckbox" class="checLabel"
+            >I agree to Fyle's terms and conditions, and provide consent to send
+            me communication.</label
+          >
+        </div>
+
+        <button type="submit" id="submitEvent" class="btn-danger btn w-100">
+          Contact Us
+        </button>
+      </form>
+    </div>
+
+    <!-- what do we do section -->
+    <div class="WhatDoWeSection">
+      <div>
+        <h6 class="text-danger text-uppercase bg-transparent whatHead">
+          WHAT WE DO
+        </h6>
+        <div class="serviceContainer">
+          <h2 class="text-uppercase font-weight-bold bg-transparent">
+            Services provide for you
+          </h2>
+          <p>
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+            lacus nec risus finibus feugiat et fermentum
+          </p>
+        </div>
+      </div>
+
+      <div class="scroll-container">
+        <div class="scroll-content">
+          <!-- Your scrollable content here -->
+
+          <div class="item image-container">
+            <img src="./images/1.png" class="w-100 imageScroller hover-image" />
+            <div class="hover-content">
+              <div class="MyWebdevContainer">
+                <div class="iconContainer">
+                  <img src="./icons/icon.png" class="iconImg" />
+                </div>
+
+                <p class="webPara">WEB DEVELOPMENT</p>
+                <p class="mobiPara">Morbi sed lacus nec risus finibus</p>
+                <p class="mobiPara">fermentum nibh. Pellentesque</p>
+                <a
+                  type="button"
+                  class="anButton"
+                  href="https://www.fylehq.com/"
+                  id="navigate-button"
+                  >Read More <img src="./icons/arrow.png" class="arrowimg"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item image-container">
+            <img src="./images/2.png" class="w-100 imageScroller hover-image" />
+            <div class="hover-content">
+              <div class="MyWebdevContainer">
+                <div class="iconContainer">
+                  <img src="./icons/icon.png" class="iconImg" />
+                </div>
+
+                <p class="webPara">WEB DEVELOPMENT</p>
+                <p class="mobiPara">Morbi sed lacus nec risus finibus</p>
+                <p class="mobiPara">fermentum nibh. Pellentesque</p>
+                <a
+                  type="button"
+                  class="anButton"
+                  href="https://www.fylehq.com/"
+                  id="navigate-button"
+                  >Read More <img src="./icons/arrow.png" class="arrowimg"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="item image-container">
+            <img src="./images/3.png" class="w-100 imageScroller hover-image" />
+            <div class="hover-content">
+              <div class="MyWebdevContainer">
+                <div class="iconContainer">
+                  <img src="./icons/icon.png" class="iconImg" />
+                </div>
+
+                <p class="webPara">WEB DEVELOPMENT</p>
+                <p class="mobiPara">Morbi sed lacus nec risus finibus</p>
+                <p class="mobiPara">fermentum nibh. Pellentesque</p>
+                <a
+                  type="button"
+                  class="anButton"
+                  href="https://www.fylehq.com/"
+                  id="navigate-button"
+                  >Read More <img src="./icons/arrow.png" class="arrowimg"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="item image-container">
+            <img src="./images/1.png" class="w-100 imageScroller hover-image" />
+            <div class="hover-content">
+              <div class="MyWebdevContainer">
+                <div class="iconContainer">
+                  <img src="./icons/icon.png" class="iconImg" />
+                </div>
+
+                <p class="webPara">WEB DEVELOPMENT</p>
+                <p class="mobiPara">Morbi sed lacus nec risus finibus</p>
+                <p class="mobiPara">fermentum nibh. Pellentesque</p>
+                <a
+                  type="button"
+                  class="anButton"
+                  href="https://www.fylehq.com/"
+                  id="navigate-button"
+                  >Read More <img src="./icons/arrow.png" class="arrowimg"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item image-container">
+            <img src="./images/2.png" class="w-100 imageScroller hover-image" />
+            <div class="hover-content">
+              <div class="MyWebdevContainer">
+                <div class="iconContainer">
+                  <img src="./icons/icon.png" class="iconImg" />
+                </div>
+
+                <p class="webPara">WEB DEVELOPMENT</p>
+                <p class="mobiPara">Morbi sed lacus nec risus finibus</p>
+                <p class="mobiPara">fermentum nibh. Pellentesque</p>
+                <a
+                  type="button"
+                  class="anButton"
+                  href="https://www.fylehq.com/"
+                  id="navigate-button"
+                  >Read More <img src="./icons/arrow.png" class="arrowimg"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item image-container">
+            <img src="./images/3.png" class="w-100 imageScroller hover-image" />
+            <div class="hover-content">
+              <div class="MyWebdevContainer">
+                <div class="iconContainer">
+                  <img src="./icons/icon.png" class="iconImg" />
+                </div>
+
+                <p class="webPara">WEB DEVELOPMENT</p>
+                <p class="mobiPara">Morbi sed lacus nec risus finibus</p>
+                <p class="mobiPara">fermentum nibh. Pellentesque</p>
+                <a
+                  type="button"
+                  class="anButton"
+                  href="https://www.fylehq.com/"
+                  id="navigate-button"
+                  >Read More <img src="./icons/arrow.png" class="arrowimg"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more items as needed -->
+        </div>
+      </div>
+
+      <div class="dots-container">
+        <!-- Dots will be generated here by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Why Choose us section -->
+    <div class="whyChooseUsSection opsClass">
+      <h6 class="text-danger text-uppercase bg-transparent">WHY CHOOSE US</h6>
+      <h2 class="text-uppercase font-weight-bold bg-transparent">
+        Why We Are Best
+      </h2>
+      <div class="whyContainer">
+        <div class="whySubContainer">
+          <img src="./icons/1.svg" alt="logo1" style="width: 60px" />
+          <h5>Clarified Vision & Target</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+        <div class="whySubContainer">
+          <img src="./icons/2.svg" alt="logo1" style="width: 60px" />
+          <h5>High Performance</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+        <div class="whySubContainer">
+          <img src="./icons/3.svg" alt="logo1" style="width: 60px" />
+          <h5>Maintain Security</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+        <div class="whySubContainer">
+          <img src="./icons/4.svg" alt="logo1" style="width: 60px" />
+          <h5>Better Strategy & Quality</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR PROJECT -->
+    <div class="ourprojectTopSection">
+      <h6 class="text-danger text-uppercase bg-transparent">Our project</h6>
+      <h2 class="text-uppercase font-weight-bold bg-transparent">
+        Why We Are Best
+      </h2>
+    </div>
+    <div class="ourProjectContainer">
+      <div class="image-container">
+        <img id="mainImage" src="./images/image.png" alt="Main Image" />
+      </div>
+      <div class="sideContainer">
+        <div
+          class="content activeContainer"
+          id="firstContainer"
+          onclick="changeImage('./images/image.png',id)"
+        >
+          Genderless Kei – Japan’s Hot <br />Set to launch on the manufacturer’s
+          new A330neo aircraft in 2017, it’s offering lots of
+        </div>
+        <div
+          class="content notActiveContainer"
+          id="secondContainer"
+          onclick="changeImage('./images/spaceImg.jpg',id)"
+        >
+          Better Strategy & Quality<br />Set to launch on the manufacturer’s new
+          A330neo aircraft in 2017, it’s offering lots of
+        </div>
+        <div
+          class="content notActiveContainer"
+          id="thirdContainer"
+          onclick="changeImage('./images/natureImg.jpg',id)"
+        >
+          Genderless Kei – Japan’s Hot <br />Set to launch on the manufacturer’s
+          new A330neo aircraft in 2017, it’s offering lots of
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlight on hover -->
+    <div class="highlightHoverContainer opsClass">
+      <h6 class="text-danger text-uppercase bg-transparent">Experts growts</h6>
+      <h2 class="text-uppercase font-weight-bold bg-transparent">
+        Our Company Growth
+      </h2>
+      <div class="hoverFullContainer">
+        <div class="hoverContainer">
+          <img src="./icons/heart (2).svg" alt="logo1" style="width: 30px" />
+          <h2>199+</h2>
+          <p>Staticfied Customers</p>
+        </div>
+        <div class="hoverContainer">
+          <img src="./icons/clock (3).svg" alt="logo1" style="width: 30px" />
+          <h2>1591+</h2>
+          <p>Days Of Operation</p>
+        </div>
+        <div class="hoverContainer">
+          <img src="./icons/Path 4402.svg" alt="logo1" style="width: 30px" />
+          <h2>283+</h2>
+          <p>Complete Project</p>
+        </div>
+        <div class="hoverContainer">
+          <img
+            src="./icons/Path 4406 (1).svg"
+            alt="logo1"
+            style="width: 30px"
+          />
+          <h2>75+</h2>
+          <p>Win Awards</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client feedback and footer -->
+
+    <div class="ClientFeedbackSection opsClass">
+      <div class="clientFeedSectionTopContainer">
+        <h4 class="text-danger text-uppercase">client's feedback</h4>
+        <h2 class="text-uppercase">people say's about us !</h2>
+      </div>
+      <div class="clientFeedMiddleContainer">
+        <p class="font-weight-bold para01">
+          Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is
+          reproduced below for those interested. Sections Bonorum et Malorum
+          original.
+        </p>
+        <h6 style="color: #808080">
+          <span class="text-danger font-weight-bold">JANNAT TUMPA</span>- COO,
+          AMERIMAR ENTERPRISES, INC.
+        </h6>
+      </div>
+      <div class="footerLogosContainer">
+        <img src="./images/Group 500.png" alt="groupLogos" class="groupImg" />
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
